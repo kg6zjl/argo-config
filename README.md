@@ -1,0 +1,2 @@
+# argo-config
+ArgoCD Config
