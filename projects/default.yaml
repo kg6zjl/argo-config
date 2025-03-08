@@ -12,5 +12,9 @@ spec:
       server: '*'
     - namespace: 'infra'
       server: '*'
+    - namespace: 'traefik'
+      server: '*'
+    - namespace: 'argocd'
+      server: '*'
   sourceRepos:
     - '*'
