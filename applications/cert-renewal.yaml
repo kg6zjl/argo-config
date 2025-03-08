@@ -2,17 +2,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: traefik
+  name: cert-renewal
   namespace: argocd
 spec:
   project: default
   source:
     repoURL: https://github.com/kg6zjl/clusters.git
     targetRevision: HEAD
-    path: home-cluster/infra/traefik
+    path: home-cluster/infra/certs/stevearnett_com
   destination:
     server: https://kubernetes.default.svc
-    namespace: traefik
+    namespace: infra
   syncPolicy:
     automated:
       prune: true
